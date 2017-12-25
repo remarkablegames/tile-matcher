@@ -1,0 +1,7 @@
+{
+  "extends": ["./node_modules/preact-scripts/config/eslint.js"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

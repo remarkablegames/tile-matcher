@@ -1,0 +1,55 @@
+{
+  "name": "tile-matcher",
+  "version": "0.0.1",
+  "description": "A tile-matching puzzle game.",
+  "author": "Mark <mark@remarkablemark.org>",
+  "scripts": {
+    "build": "preact-scripts build",
+    "clean": "rm -rf build",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "deploy": "npm run clean && npm run build && gitploy build gh-pages",
+    "eject": "preact-scripts eject",
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "precommit": "lint-staged",
+    "release": "standard-version --no-verify",
+    "start": "preact-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remarkablegames/tile-matcher"
+  },
+  "bugs": {
+    "url": "https://github.com/remarkablegames/tile-matcher/issues"
+  },
+  "keywords": [
+    "tile-matching",
+    "puzzle",
+    "game"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^5.2.6",
+    "@commitlint/config-conventional": "^5.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "gitploy": "^0.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "preact": "^5.6.0",
+    "preact-scripts": "0.3.0-alpha",
+    "prettier": "^1.9.2",
+    "standard-version": "^4.2.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "private": true,
+  "license": "MIT"
+}
