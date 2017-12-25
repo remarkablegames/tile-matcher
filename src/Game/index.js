@@ -7,7 +7,7 @@ export default class Game extends Component {
   render() {
     return (
       <div className="center">
-        <h1 className="text-center">Tile Matcher</h1>
+        <h1 className="heading text-center">Tile Matcher</h1>
         <TileMatcher tiles={tiles} rowSize={5} columnSize={5} />
       </div>
     );

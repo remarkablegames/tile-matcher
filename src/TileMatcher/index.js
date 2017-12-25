@@ -160,6 +160,7 @@ export default class TilePuzzle extends Component {
             </button>
           )}
         </p>
+        <br />
       </div>
     );
   }

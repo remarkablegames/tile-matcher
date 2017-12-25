@@ -11,6 +11,10 @@
   transform: translate(-50%, -50%);
 }
 
+.heading {
+  font-size: 1.95em;
+}
+
 .text-center {
   text-align: center;
 }
