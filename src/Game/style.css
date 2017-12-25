@@ -1,0 +1,16 @@
+/* https://css-tricks.com/centering-css-complete-guide/#center-horizontally-and-vertically */
+#container {
+  height: 100%;
+  position: relative;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-center {
+  text-align: center;
+}

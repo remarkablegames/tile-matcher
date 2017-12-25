@@ -1,0 +1,31 @@
+td {
+  width: 40px;
+  height: 24px;
+}
+
+td button {
+  font-size: 14px;
+  width: 36px;
+  height: 21px;
+}
+
+/* tile colors */
+.black {
+  color: #000000;
+}
+
+.blue {
+  color: #408000;
+}
+
+.red {
+  color: #c00200;
+}
+
+.yellow {
+  color: #ffc000;
+}
+
+.float-right {
+  float: right;
+}
