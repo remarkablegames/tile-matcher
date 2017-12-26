@@ -1,6 +1,6 @@
 {
   "name": "tile-matcher",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A tile-matching puzzle game.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
