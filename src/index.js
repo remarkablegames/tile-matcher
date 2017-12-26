@@ -1,4 +1,7 @@
 const initApp = () => {
+  // initialize google analytics
+  require('./helpers/ga');
+
   // render game
   const { h, render } = require('preact');
   const Game = require('./Game').default;
