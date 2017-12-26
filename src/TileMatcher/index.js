@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import { clone, mapColToRow, random } from '../helpers/utils';
 import { getTileColor } from '../helpers/tiles';
+import { trackEvent } from '../helpers/ga';
 import './style.css';
 
 export default class TilePuzzle extends Component {
@@ -96,18 +97,27 @@ export default class TilePuzzle extends Component {
     // skip if tile is empty
     if (item === undefined) return;
 
+    // increment total clicks
+    let { clicks } = this.state;
+    clicks += 1;
+
+    trackEvent('tile', 'click', 'Tile Matcher', clicks);
+
     // remove tile
     const clonedTiles = clone(this.state.tiles);
     this.removeItem(clonedTiles, item, row, col);
 
+    // check if puzzle is solved
+    const isSolved = clonedTiles.join('').length === rowSize * (columnSize - 1);
+    if (isSolved) {
+      trackEvent('tile', 'solved', 'Tile Matcher', clicks);
+    }
+
     // redraw tiles
     this.setState(state => {
-      // check if puzzle is solved
-      const isSolved =
-        clonedTiles.join('').length === rowSize * (columnSize - 1);
       return {
         tiles: this.redrawTiles(clonedTiles),
-        clicks: state.clicks + 1,
+        clicks,
         isSolved,
       };
     });
@@ -117,6 +127,7 @@ export default class TilePuzzle extends Component {
    * Restarts tile puzzle.
    */
   restart = () => {
+    trackEvent('tile', 'restart', 'Tile Matcher', this.state.clicks);
     this.setState({
       tiles: this.generateTiles(),
       clicks: 0,
