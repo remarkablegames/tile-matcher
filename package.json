@@ -15,6 +15,7 @@
     "release": "standard-version --no-verify",
     "start": "preact-scripts start"
   },
+  "homepage": "https://remarkablegames.github.io/tile-matcher/",
   "repository": {
     "type": "git",
     "url": "https://github.com/remarkablegames/tile-matcher"
