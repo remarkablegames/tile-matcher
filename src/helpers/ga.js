@@ -1,4 +1,4 @@
-window.ga('create', 'UA-XXXXX-Y', 'auto');
+window.ga('create', 'UA-59233605-5', 'auto');
 
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/debugging
 let url = 'https://www.google-analytics.com/analytics.js';
