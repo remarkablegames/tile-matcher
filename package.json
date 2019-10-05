@@ -15,7 +15,7 @@
     "release": "standard-version --no-verify",
     "start": "preact-scripts start"
   },
-  "homepage": "https://remarkablegames.github.io/tile-matcher/",
+  "homepage": "https://remarkablegames.org/tile-matcher/",
   "repository": {
     "type": "git",
     "url": "https://github.com/remarkablegames/tile-matcher"
@@ -23,11 +23,6 @@
   "bugs": {
     "url": "https://github.com/remarkablegames/tile-matcher/issues"
   },
-  "keywords": [
-    "tile-matching",
-    "puzzle",
-    "game"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^5.2.6",
     "@commitlint/config-conventional": "^5.2.3",
