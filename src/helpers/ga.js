@@ -1,4 +1,6 @@
-window.ga('create', 'UA-59233605-5', 'auto');
+const { ga, requirejs } = window;
+
+ga('create', 'UA-59233605-5', 'auto');
 
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/debugging
 let url = 'https://www.google-analytics.com/analytics.js';
@@ -6,17 +8,17 @@ if (
   process.env.NODE_ENV === 'development' ||
   location.hostname === 'localhost'
 ) {
-  url = 'https://www.google-analytics.com/analytics_debug.js';
-  window.ga('set', 'sendHitTask', null);
+  url = url.replace('analytics.js', 'analytics_debug.js');
+  ga('set', 'sendHitTask', null);
 }
 
-window.ga('set', {
+ga('set', {
   title: 'Tile Matcher',
   page: '/tile-matcher/',
 });
-window.ga('send', 'pageview');
+ga('send', 'pageview');
 
-window.requirejs([url]);
+requirejs([url]);
 
 /**
  * Tracks event with analytics.
