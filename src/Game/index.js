@@ -9,10 +9,10 @@ export default class Game extends Component {
     return (
       <div>
         <GitHubCorner />
-        <div className="center">
+        <main className="center" role="main">
           <h1 className="heading text-center">Tile Matcher</h1>
           <TileMatcher tiles={tiles} rowSize={5} columnSize={5} />
-        </div>
+        </main>
       </div>
     );
   }

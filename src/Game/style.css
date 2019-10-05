@@ -1,5 +1,10 @@
+/* ensure tag works in IE 9-11 */
+main {
+  display: block;
+}
+
 /* https://css-tricks.com/centering-css-complete-guide/#center-horizontally-and-vertically */
-#container {
+#root {
   height: 100%;
   position: relative;
 }
