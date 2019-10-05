@@ -6,12 +6,10 @@
   "scripts": {
     "build": "preact-scripts build",
     "clean": "rm -rf build",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "deploy": "npm run clean && npm run build && gitploy build gh-pages",
     "eject": "preact-scripts eject",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
-    "precommit": "lint-staged",
     "release": "standard-version --no-verify",
     "start": "preact-scripts start"
   },
