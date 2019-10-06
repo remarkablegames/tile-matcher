@@ -1,6 +1,20 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.2.0](https://github.com/remarkablegames/tile-matcher/compare/v0.1.0...v0.2.0) (2019-10-06)
+
+
+### Build System
+
+* **package:** upgrade `package.json` "devDependencies" ([8624d5a](https://github.com/remarkablegames/tile-matcher/commit/8624d5a))
+
+
+### Features
+
+* tidy `index.html` and update head <meta> tags ([6ba10ac](https://github.com/remarkablegames/tile-matcher/commit/6ba10ac))
+
+
 
 <a name="0.1.0"></a>
 # 0.1.0 (2017-12-26)
