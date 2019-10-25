@@ -1,6 +1,10 @@
 # tile-matcher
 
-A tile-matching puzzle game.
+A [tile-matching](https://en.wikipedia.org/wiki/Tile-matching_video_game) puzzle game.
+
+The project was bootstrapped with [`create-preact-app`](https://github.com/just-boris/create-preact-app) and the game is hosted on [remarkablegames](https://remarkablegames.org/).
+
+[Match Tiles](https://remarkablegames.org/tile-matcher/)
 
 ## Prerequisites
 
