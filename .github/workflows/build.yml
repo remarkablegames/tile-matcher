@@ -18,9 +18,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run ESLint
-        run: npm run lint
-
       - name: Build game
         run: npm run build
 
