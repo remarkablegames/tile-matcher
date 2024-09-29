@@ -25,4 +25,4 @@ jobs:
         if: github.ref_name == 'master'
         uses: remarkablemark/gitploy-action@v1
         with:
-          directory: dist
+          directory: build
